@@ -1,7 +1,7 @@
 // code written by nsulti
 // reinventing the bicycle cuz very epic
-// date started: no idea
-// date finished: 
+// date started: 11 jul 2026
+// date finished: 25 jul 2026
 // made in: vim
 // lang: pure c
 
