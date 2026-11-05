@@ -6,11 +6,11 @@ A lightweight CLI archiver written in **pure C**, implementing the classic **Huf
 
 ### ✨ Features / Возможности
 
-- **Lossless Compression:** Uses custom Huffman tree construction based on character frequency analysis.
-- **Multi-File Archiving:** Capable of packing multiple files into a single consolidated archive `.hf`.
-- **Custom Binary Format:** Implements a strict file structure header (`HF`), serialization of frequency tables, file size metadata, and variable-length encoded bitstreams.
-- **Buffered I/O Management:** Reads data in optimal chunks (`8192 bytes`) to reduce disk overhead and maximize performance.
-- **Cross-Platform CLI:** Fully controlled via UNIX-like flags (`-c`, `-x`, `-v`, `-h`).
+1. **Lossless Compression:** Uses custom Huffman tree construction based on character frequency analysis.
+2. **Multi-File Archiving:** Capable of packing multiple files into a single consolidated archive `.hf`.
+3. **Custom Binary Format:** Implements a strict file structure header (`HF`), serialization of frequency tables, file size metadata, and variable-length encoded bitstreams.
+4. **Buffered I/O Management:** Reads data in optimal chunks (`8192 bytes`) to reduce disk overhead and maximize performance.
+5. **Cross-Platform CLI:** Fully controlled via UNIX-like flags (`-c`, `-x`, `-v`, `-h`).
 
 ---
 
@@ -25,13 +25,13 @@ The archiver introduces a strict custom binary layout for each compressed file i
 
 ---
 
-### 🚀 Usage / Использование
+### 🚀 Usage
 
-#### Arguments / Флаги:
-- `-h` — Show help screen / Вызов справки.
-- `-c` — Compress files / Сжатие файлов в архив.
-- `-x` — Extract archive / Распаковка архива.
-- `-v` — Verbose mode (detailed logs) / Подробный вывод процессов.
+#### ⛳ Arguments
+1. `-h` — Show help screen / Вызов справки.
+2. `-c` — Compress files / Сжатие файлов в архив.
+3. `-x` — Extract archive / Распаковка архива.
+4. `-v` — Verbose mode (detailed logs) / Подробный вывод процессов.
 
 #### Examples:
 ```bash
@@ -47,8 +47,9 @@ The archiver introduces a strict custom binary layout for each compressed file i
 ---
 
 ### 🚧 Future Prospects (Roadmap)
-- Upgrade the algorithm into full **DEFLATE** compression by combining **LZ77** dictionary matching with Huffman encoding.
-- Refactor structural global state logic to fully stabilize edge cases in streaming extractions.
+❓ Upgrade the algorithm into full **DEFLATE** compression by combining **LZ77** dictionary matching with Huffman encoding.
+
+❓ Refactor structural global state logic to fully stabilize edge cases in streaming extractions.
 
 ---
 
